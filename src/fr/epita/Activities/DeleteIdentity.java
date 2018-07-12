@@ -40,7 +40,7 @@ public class DeleteIdentity implements Activity {
 				DataIdentity dataId = new DataIdentity();
 				myout.println(dataId.toUpdateOrToSearch(identities));
 				String identityId = scanner.nextLine();
-				if (identityId.isEmpty()) {
+				if (identityId.isEmpty() || !dataId.isInteger(identityId)) {
 					myout.println("Entered Id is Invalid.");
 					return;
 				}

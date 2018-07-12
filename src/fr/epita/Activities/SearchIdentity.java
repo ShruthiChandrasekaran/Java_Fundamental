@@ -32,6 +32,10 @@ public class SearchIdentity implements Activity {
 				DataIdentity dataId = new DataIdentity();
 				myout.println(dataId.toUpdateOrToSearch(identities));	
 				String id = scanner.nextLine();
+				if (id.isEmpty() || !dataId.isInteger(id)) {
+					myout.println("Entered Id is Invalid.");
+					return;
+				}
 				DataIdentity foundIdentity = identityDAO.find(id);
 				if (foundIdentity == null){
 					myout.println("Identity Not Found : "+id);
