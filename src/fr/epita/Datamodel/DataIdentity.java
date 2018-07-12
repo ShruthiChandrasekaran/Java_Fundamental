@@ -144,4 +144,17 @@ public String identityInProcess(DataIdentity identity) {
 	return tb.toString();
 }
 
+public boolean isInteger( String input )
+{
+   try
+   {
+      Integer.parseInt( input );
+      return true;
+   }
+   catch( Exception ex )
+   {
+      return false;
+   }
+}
+
 }
