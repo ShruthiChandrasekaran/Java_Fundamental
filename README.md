@@ -1,5 +1,5 @@
-<h1>Identity Management System</h1></br>
-<h4>Java Fundamental Project</h4></br>
+<h1>Identity Management System</h1>
+<h4>Java Fundamental Project</h4>
 <span><p>
 The Identity Management System is a console-based application; the ADMIN has to select one of options available.
 Console Operations implemented on the system are:
